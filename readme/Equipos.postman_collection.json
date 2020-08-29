@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "a7ee57ec-b589-4bf4-8574-f35590aa154a",
+		"name": "Equipos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/equipos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsZXl2YWplcmV6Z3IiLCJpYXQiOjE1OTg2OTIwMjAsImV4cCI6MTU5OTU1NjAyMH0.smXmg4oiEzzUMAns8RTkSI5Kf2y_mrasIguFEX8hgrAr1bbfbqQFFIsVmHhsDwrRNHZjDF78lgjY26pRgLbqjg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/equipos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"equipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/equipos/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJncmxleXZhIiwiaWF0IjoxNTk4NjkwMzk0LCJleHAiOjE1OTk1NTQzOTR9.m3Jcl8bA6dUoQD8jdi4-w6x0V6-FsaLh3oo65wruXSeQiDQCbdVjBk7FInMHpTbOentiPA-qfEC-ssqqaSKfgw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/equipos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"equipos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/equipos/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYXF1ZWwiLCJpYXQiOjE1OTg3MjkxNzYsImV4cCI6MTU5OTU5MzE3Nn0._IieWNCmUbXDZ2Z4gfPoGur6fuHssDIEb5b_Vzg4MgCu5z_p6vX0V5WwZQX2V0bUk58kh4f4emiL4VRybSrjJg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/equipos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"equipos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/equipos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbHBhIiwiaWF0IjoxNTk4NzEzNzM5LCJleHAiOjE1OTk1Nzc3Mzl9.zryRgmPuKapS5p51kOv1SVwzTayFkdGmerFVv2UtM8SVvTCl3DBzajnNcnRK0r_H0rDdQmTpXvWl1VDaJ6I3bg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"teamName\": \"FC-Barcelona\",\r\n    \"passNumber\": 5000,\r\n    \"faultNumber\": 500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/equipos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"equipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/equipos/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJncmxleXZhIiwiaWF0IjoxNTk4NjkwMzk0LCJleHAiOjE1OTk1NTQzOTR9.m3Jcl8bA6dUoQD8jdi4-w6x0V6-FsaLh3oo65wruXSeQiDQCbdVjBk7FInMHpTbOentiPA-qfEC-ssqqaSKfgw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"teamName\": \"FC-Barcelona\",\r\n    \"passNumber\": 5000,\r\n    \"faultNumber\": 500,\r\n    \"leagueId\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/equipos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"equipos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

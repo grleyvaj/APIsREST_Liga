@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "06e0bbd1-b5c9-4451-96f4-6496c5475412",
+		"name": "Ligas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/ligas FREE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsZXl2YWplcmV6Z3IiLCJpYXQiOjE1OTg3MjkxNDQsImV4cCI6MTU5OTU5MzE0NH0.e7eCIh3CaTFqzqxQHqGhMCWnCKKfdc1stbf0NwkffwVZfIsLmfYvjgOWUJ8IrcygdErCjfs9VhUuVSUR29ggRQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v2/ligas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v2",
+						"ligas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v2/ligas PAID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsZXl2YWplcmV6Z3IiLCJpYXQiOjE1OTg3MTY0OTksImV4cCI6MTU5OTU4MDQ5OX0.vZH0MYD0kis5raiwhp6S6VLewevuqPpu8pDRmcBQwZqQTiqEV7-oUvvEQ8wvPAKQT2_-mAS2eRnHx8Ox2flJ2w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v2/ligas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v2",
+						"ligas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/equipos/{equipoId}/jugadores",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsZXl2YWplcmV6Z3IiLCJpYXQiOjE1OTg2OTIwMjAsImV4cCI6MTU5OTU1NjAyMH0.smXmg4oiEzzUMAns8RTkSI5Kf2y_mrasIguFEX8hgrAr1bbfbqQFFIsVmHhsDwrRNHZjDF78lgjY26pRgLbqjg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/equipos/1/jugadores",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"equipos",
+						"1",
+						"jugadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/ligas/{ligaId}/equipos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsZXl2YWplcmV6Z3IiLCJpYXQiOjE1OTg2OTIwMjAsImV4cCI6MTU5OTU1NjAyMH0.smXmg4oiEzzUMAns8RTkSI5Kf2y_mrasIguFEX8hgrAr1bbfbqQFFIsVmHhsDwrRNHZjDF78lgjY26pRgLbqjg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/ligas/1/equipos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"ligas",
+						"1",
+						"equipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/equipos/{equipoId}/ligas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsZXl2YWplcmV6Z3IiLCJpYXQiOjE1OTg3MTY0OTksImV4cCI6MTU5OTU4MDQ5OX0.vZH0MYD0kis5raiwhp6S6VLewevuqPpu8pDRmcBQwZqQTiqEV7-oUvvEQ8wvPAKQT2_-mAS2eRnHx8Ox2flJ2w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/equipos/1/ligas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"equipos",
+						"1",
+						"ligas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/jugadores/{id}",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsZXl2YWplcmV6Z3IiLCJpYXQiOjE1OTg3MTY0OTksImV4cCI6MTU5OTU4MDQ5OX0.vZH0MYD0kis5raiwhp6S6VLewevuqPpu8pDRmcBQwZqQTiqEV7-oUvvEQ8wvPAKQT2_-mAS2eRnHx8Ox2flJ2w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Leonel Messi\",\r\n    \"nationality\": \"Argentina\",\r\n    \"height\": 1.70121,\r\n    \"rightHanded\": false,\r\n    \"teamId\": 1    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/jugadores/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"jugadores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/ligas/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbCIsImlhdCI6MTU5ODY4NTY0OCwiZXhwIjoxNTk5NTQ5NjQ4fQ.jNfhxFAnKtNRni6VsXwPe0M5KZS2sXH0u3GVSy_UVKQ64Ry-jJFFZEvDsz4KMFLtKdGci0bvxm7CvgaOxm9Q3g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/ligas/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"ligas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/ligas/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbCIsImlhdCI6MTU5ODY4NTY0OCwiZXhwIjoxNTk5NTQ5NjQ4fQ.jNfhxFAnKtNRni6VsXwPe0M5KZS2sXH0u3GVSy_UVKQ64Ry-jJFFZEvDsz4KMFLtKdGci0bvxm7CvgaOxm9Q3g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/ligas/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"ligas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/ligas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbCIsImlhdCI6MTU5ODY4NTY0OCwiZXhwIjoxNTk5NTQ5NjQ4fQ.jNfhxFAnKtNRni6VsXwPe0M5KZS2sXH0u3GVSy_UVKQ64Ry-jJFFZEvDsz4KMFLtKdGci0bvxm7CvgaOxm9Q3g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"leagueName\": \"dsfsaf\",\r\n                \"startDate\": \"2021-09-04\",\r\n                \"endDate\": \"2021-05-09\",\r\n                \"gameNumber\": 56,\r\n                \"createdAt\": \"2020-01-02 00:00:00\",\r\n                \"updatedAt\": \"2020-01-03 00:00:00\",\r\n                \"teams\": [{\r\n                        \"teamName\": \"FC-Barcelona\",\r\n                        \"passNumber\": 5000,\r\n                        \"faultNumber\": 500\r\n                    }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/ligas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"ligas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/ligas/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbCIsImlhdCI6MTU5ODY4NTY0OCwiZXhwIjoxNTk5NTQ5NjQ4fQ.jNfhxFAnKtNRni6VsXwPe0M5KZS2sXH0u3GVSy_UVKQ64Ry-jJFFZEvDsz4KMFLtKdGci0bvxm7CvgaOxm9Q3g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Francesa\",\r\n    \"startDate\": \"2021-01-01\",\r\n    \"endDate\": \"2021-07-31\",\r\n     \"gameNumber\": 37\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/ligas/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"ligas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

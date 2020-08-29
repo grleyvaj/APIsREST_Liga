@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "1a12e78d-d66a-401f-af3a-991273297bf7",
+		"name": "Jugadores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/jugadores",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbCIsImlhdCI6MTU5ODY4NTY0OCwiZXhwIjoxNTk5NTQ5NjQ4fQ.jNfhxFAnKtNRni6VsXwPe0M5KZS2sXH0u3GVSy_UVKQ64Ry-jJFFZEvDsz4KMFLtKdGci0bvxm7CvgaOxm9Q3g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/jugadores",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"jugadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/jugadores/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJncmxleXZhIiwiaWF0IjoxNTk4NjkwMzk0LCJleHAiOjE1OTk1NTQzOTR9.m3Jcl8bA6dUoQD8jdi4-w6x0V6-FsaLh3oo65wruXSeQiDQCbdVjBk7FInMHpTbOentiPA-qfEC-ssqqaSKfgw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/jugadores/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"jugadores",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/jugadores/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbCIsImlhdCI6MTU5ODY4NTY0OCwiZXhwIjoxNTk5NTQ5NjQ4fQ.jNfhxFAnKtNRni6VsXwPe0M5KZS2sXH0u3GVSy_UVKQ64Ry-jJFFZEvDsz4KMFLtKdGci0bvxm7CvgaOxm9Q3g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/jugadores/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"jugadores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/jugadores",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbCIsImlhdCI6MTU5ODY4NTY0OCwiZXhwIjoxNTk5NTQ5NjQ4fQ.jNfhxFAnKtNRni6VsXwPe0M5KZS2sXH0u3GVSy_UVKQ64Ry-jJFFZEvDsz4KMFLtKdGci0bvxm7CvgaOxm9Q3g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\": \"Leonel Messi\",\r\n    \"nationality\": \"Argentina\",\r\n    \"height\": 1.70121,\r\n    \"rightHanded\": false,\r\n    \"teamId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/jugadores",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"jugadores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/avanzza/v1/jugadores/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc21lbCIsImlhdCI6MTU5ODY4NTY0OCwiZXhwIjoxNTk5NTQ5NjQ4fQ.jNfhxFAnKtNRni6VsXwPe0M5KZS2sXH0u3GVSy_UVKQ64Ry-jJFFZEvDsz4KMFLtKdGci0bvxm7CvgaOxm9Q3g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Leonel Messi\",\r\n    \"nationality\": \"Argentina\",\r\n    \"height\": 1.70121,\r\n    \"rightHanded\": false,\r\n    \"teamId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/avanzza/v1/jugadores/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"avanzza",
+						"v1",
+						"jugadores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
