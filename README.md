@@ -2,13 +2,13 @@
 API REST que expone servicios de la Liga Nacional de Fútbol desarrollada por [AVANZZA One single solution  (Avanzza)](http://www.avanzza.io/).
 La API REST fue desarrollada con `Spring Boot`, `Spring Data`, `JPA` y `MySQL`. Se implementan como buenas prácticas la paginación, 
 versionado y validaciones. Para escribir un código más simple y legible se aplican anotaciones, implementan validadores y emplea `Lombok`. 
-Para el manejo de recursos e hipertexto empleo `Spring HATEOAS`, para la seguridad `Spring Security` y seguiridad basada en tokens (`JWT`). 
+Para el manejo de recursos e hipertexto empleo `Spring HATEOAS`, para la seguridad `Spring Security` y seguridad basada en tokens (`JWT`). 
 Para gestionar migraciones `flyway`. El proyecto cuenta con una API versión FREE y una API versión PAID. Empleo `guava` e implemento una anotación de validación `Throttling` para limitar la cantidad de peticiones que se realizan a la versión FREE.
 
-La API fue documentada con `Open API Sagger` y testeada con `Postman` y pruebas automatizadas con `JUnit`
-Y los paquetes fueron estructurados siguiendo `Driver Domain Design`
+La API fue documentada con `Open API Swagger` y testeada con `Postman` y pruebas automatizadas con `JUnit`
+Y los paquetes fueron estructurados siguiendo `Domain Driver Design`
 
-Ruta de swagguer: `http://localhost:8081/swagger-ui/index.html?configUrl=/api-docs/swagger-config/`
+Ruta de swagger: `http://localhost:8081/swagger-ui/index.html?configUrl=/api-docs/swagger-config/`
 
 ### Instalación
 1. `Intellij IDEA` como IDE de desarrollo. Descargar [aquí](https://www.jetbrains.com/es-es/idea/download/).
@@ -78,7 +78,7 @@ Desarrollé dos APIS:
  
     API versión Paid (v2)
  
-Si el usuario tiene un rol FREE podrá acceder a una API version Free y solamente podrá realizar 3 peticiones por minuto.
+Si el usuario tiene un rol FREE podrá acceder a una API versión Free y solamente podrá realizar 3 peticiones por minuto.
 Los usuarios con rol PAID podrán acceder a la API versión Paid y no tienen límites de peticiones
 
 Por tanto: 
@@ -154,7 +154,7 @@ USUARIO
 
 ERRORES
 
-status `401` Unauthorized: No se ha autenticado y se autenticó pero en la petición no especificó el token
+status `401` Unauthorized: No se ha autenticado y se autenticó, pero en la petición no especificó el token
 
 status `429` Too many requests:  El usuario que realiza la petición es FREE y no tiene permisos para realizar más de 3 peticiones por minuto
 
