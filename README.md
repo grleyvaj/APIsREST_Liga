@@ -148,6 +148,10 @@ JUGADOR
 - Actualizar jugador: PUT `/avanzza/v1/jugadores/{jugadorId}`
 - Eliminar jugador: DELETE `/avanzza/v1/jugadores/{jugadorId}`
 
+USUARIO
+- Adicionar usuario: POST `/avanzza/signup`
+- Autenticar usuario: POST `avanzza/signin`
+
 ERRORES
 status `401` Unauthorized: No se ha autenticado y se autenticó pero en la petición no especificó el token
 status `429` Too many requests:  El usuario que realiza la petición es FREE y no tiene permisos para realizar más de 3 peticiones por minuto
