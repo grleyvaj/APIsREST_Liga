@@ -153,9 +153,13 @@ USUARIO
 - Autenticar usuario: POST `avanzza/signin`
 
 ERRORES
+
 status `401` Unauthorized: No se ha autenticado y se autenticó pero en la petición no especificó el token
+
 status `429` Too many requests:  El usuario que realiza la petición es FREE y no tiene permisos para realizar más de 3 peticiones por minuto
+
 status `409` Not Found: El recurso solicitado no se encuentra
+
 He manejado otras excepciones cuyos status se encuentran también detallados en la documentación de la API
 [aquí](http://localhost:8081/swagger-ui/index.html?configUrl=/api-docs/swagger-config/). 
 
